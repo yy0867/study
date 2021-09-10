@@ -16,6 +16,14 @@ struct Stack<T>: DataStructure {
     var count: Int { stack.count }
     var isEmpty: Bool { stack.isEmpty }
     
+    func print() {
+        Swift.print("|", terminator: "")
+        for s in stack {
+            Swift.print(" \(s) |", terminator: "")
+        }
+        Swift.print()
+    }
+    
     // `top`
     // 스택에 가장 최근에 들어간 값을 확인하는 프로퍼티
     // 스택이 비어 있다면 `nil`을 반환하므로, 반환값을 옵셔널로 선언

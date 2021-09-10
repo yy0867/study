@@ -8,10 +8,11 @@
 import Foundation
 
 func printLine(name: String) {
+    print()
     for _ in 0 ..< 10 { print("-", terminator: "") }
     print(" \(name) ", terminator: "")
     for _ in 0 ..< 10 { print("-", terminator: "") }
-    print()
+    print("\n")
 }
 
 func queue() {
@@ -22,11 +23,14 @@ func queue() {
     queue.enqueue(13)
     queue.enqueue(45)
     
-    print(queue)
+    queue.print()
     
     print("dequeue() -> \(queue.dequeue()!)")
+    queue.print()
     print("dequeue() -> \(queue.dequeue()!)")
+    queue.print()
     print("dequeue() -> \(queue.dequeue()!)")
+    queue.print()
 }
 
 func iqueue() {
@@ -37,11 +41,14 @@ func iqueue() {
     iqueue.enqueue("DataStructure")
     iqueue.enqueue("for Swift")
     
-    print(iqueue)
+    iqueue.print()
     
     print("dequeue() -> \(iqueue.dequeue()!)")
+    iqueue.print()
     print("dequeue() -> \(iqueue.dequeue()!)")
+    iqueue.print()
     print("dequeue() -> \(iqueue.dequeue()!)")
+    iqueue.print()
 }
 
 func stack() {
@@ -50,11 +57,45 @@ func stack() {
     var stack = Stack<Int>()
     
     for i in 1...5 { stack.push(i) }
-    print(stack)
+    stack.print()
     
-    for _ in 1...5 { print("pop() -> \(stack.pop()!)") }
+    for _ in 1...5 {
+        print("pop() -> \(stack.pop()!)")
+        stack.print()
+    }
+}
+
+func linkedList() {
+    printLine(name: "Linked List")
+    
+    var list = LinkedList<String>()
+    list.append("a")
+    list.append("b")
+    list.append("Linked")
+    list.append("List")
+    list.print()
+    
+    print("insert index[2]: Swift")
+    list.insert("Swift", at: 2)
+    list.print()
+    
+    print("insert index[2]: Hello")
+    list.insert("Hello", at: 2)
+    list.print()
+    
+    print("removeLast")
+    list.removeLast()
+    list.print()
+    
+    print("remove index[1] -> \(list.remove(at: 1))")
+    list.print()
+    
+    print("removeLast X 3")
+    for _ in 0 ..< 3 { list.removeLast() }
+    list.print()
 }
 
 queue()
 iqueue()
 stack()
+linkedList()

@@ -10,4 +10,5 @@ import Foundation
 protocol DataStructure {
     var count: Int { get }
     var isEmpty: Bool { get }
+    func print()
 }

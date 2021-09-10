@@ -17,6 +17,14 @@ struct Queue<T>: DataStructure {
     var count: Int { queue.count }
     var isEmpty: Bool { queue.isEmpty }
     
+    func print() {
+        Swift.print("|", terminator: "")
+        for q in queue {
+            Swift.print(" \(q) |", terminator: "")
+        }
+        Swift.print()
+    }
+    
     // `enqueue(_:)`
     // 큐에 값을 넣는 메서드
     mutating func enqueue(_ element: T) {
@@ -49,6 +57,18 @@ struct IQueue<T>: DataStructure {
     // DataStructure 프로토콜 준수
     var count: Int { queue.count }
     var isEmpty: Bool { queue.isEmpty }
+        
+    func print() {
+        Swift.print("|", terminator: "")
+        for q in queue {
+            var value = ""
+            if q == nil { value = "nil" }
+            else { value = "\(q!)" }
+            Swift.print(" \(value) |", terminator: "")
+        }
+        Swift.print()
+    }
+
     
     // `enqueue(_:)`
     // 큐에 값을 넣는 메서드
