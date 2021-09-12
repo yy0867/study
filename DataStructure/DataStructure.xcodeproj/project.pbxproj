@@ -12,6 +12,7 @@
 		A527853026EB5127009D9955 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527852F26EB5127009D9955 /* Queue.swift */; };
 		A527853226EB5638009D9955 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527853126EB5638009D9955 /* Stack.swift */; };
 		A527853426EB665A009D9955 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527853326EB665A009D9955 /* LinkedList.swift */; };
+		A567291026EDCD3600440BDC /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567290F26EDCD3600440BDC /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		A527852F26EB5127009D9955 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A527853126EB5638009D9955 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		A527853326EB665A009D9955 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		A567290F26EDCD3600440BDC /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				A527852D26EB510F009D9955 /* DataStructureProtocol.swift */,
 				A527852F26EB5127009D9955 /* Queue.swift */,
 				A527853326EB665A009D9955 /* LinkedList.swift */,
+				A567290F26EDCD3600440BDC /* Heap.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				A527852726EB5060009D9955 /* main.swift in Sources */,
 				A527853026EB5127009D9955 /* Queue.swift in Sources */,
 				A527853426EB665A009D9955 /* LinkedList.swift in Sources */,
+				A567291026EDCD3600440BDC /* Heap.swift in Sources */,
 				A527852E26EB510F009D9955 /* DataStructureProtocol.swift in Sources */,
 				A527853226EB5638009D9955 /* Stack.swift in Sources */,
 			);

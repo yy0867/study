@@ -95,7 +95,30 @@ func linkedList() {
     list.print()
 }
 
+func heap() {
+    printLine(name: "Heap")
+    
+    var heap = Heap<Int>()
+    heap.type = .minHeap
+    
+    heap.insert(3)
+    heap.insert(5)
+    heap.insert(2)
+    heap.insert(10)
+    heap.insert(56)
+    
+    print("peek() -> \(heap.peek()!)")
+    
+    print("remove() -> \(heap.remove()!)")
+    print("remove() -> \(heap.remove()!)")
+    print("remove() -> \(heap.remove()!)")
+    print("remove() -> \(heap.remove()!)")
+    
+    heap.print()
+}
+
 queue()
 iqueue()
 stack()
 linkedList()
+heap()
