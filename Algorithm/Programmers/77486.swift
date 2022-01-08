@@ -24,7 +24,7 @@ func solution(_ enroll:[String], _ referral:[String], _ seller:[String], _ amoun
             curSeller = referralOf[curSeller]!
             price = referralPrice
             
-            if price < 10 { break }
+            if price < 1 { break }
         }
     }
     
